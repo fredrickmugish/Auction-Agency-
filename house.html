@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <div class="menu-bar">
+        <ul>
+            <li><a href="Home.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-users"></i>About</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-inr"></i>Auctions</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="house.html">Houses</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="land.html">Lands</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            
+            <li><a href="#"><i class="fa fa-phone"></i>Contact</a>
+            <div class="sub-menu-1">
+                 <ul>
+                    <li style="color:white">0762521584</li>
+                    <li style="color:white">0633349974</li>
+                </ul>
+            </div>
+            </li>
+            <li><a href="form.html"><i class="fa fa-user"></i>Log In</a></li>
+         
+
+        </ul>
+        <div class="search-menu">
+        <form action="#" method="post" name="search-bar">
+            <input class="srch" type="text" placeholder="Product/Location" name="search">
+            <input class="btn" type="submit" value="Search">
+        </form>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="maweni.jpg" height="" width="" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dar es salaam</p>
+                <h5 class="card-title">Nyumba inauzwa kigamboni</h5>
+
+
+                  <a class="btn btn-success" style="margin-right: 10px;">TZS 800 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm21">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="13000">00:00:00</div>
+
+                  <form id="bidForm21" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+              </div>
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="gomz2.jpg" height="" width="" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dar es salaam</p>
+                <h5 class="card-title">Nyumba inauzwa mbezi</h5>
+
+
+                  <a class="btn btn-success" style="margin-right: 10px;">TZS 100 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm22">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="10000">00:00:00</div>
+
+
+                  <form id="bidForm22" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+              </div>
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="gomz5.jpg" height="" width="" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dodoma</p>
+                <h5 class="card-title">Nyumba inauzwa kisasa</h5>
+
+
+                  <a class="btn btn-success" style="margin-right: 10px;">TZS 400 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm23">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="9000">00:00:00</div>
+
+                  <form id="bidForm23" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+              </div>
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="gomz4.jpg" height="" width="" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dodoma</p>
+                <h5 class="card-title">Nyumba inauzwa makulu</h5>
+
+
+                  <a class="btn btn-success" style="margin-right: 10px;">TZS 50 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm24">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="5000">00:00:00</div>
+
+                  <form id="bidForm24" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+
+  <br><br>
+  
+  <div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="goba.jpeg" height="" width="" class="card-img-top" alt="">
+            <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dar es salaam</p>
+                <h5 class="card-title">Nyumba inauzwa goba</h5>
+
+
+                <a class="btn btn-success" style="margin-right: 10px;">TZS 40 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm25">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="2000">00:00:00</div>
+
+
+                <form id="bidForm25" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="mb.jpeg" height="" width="" class="card-img-top" alt="">
+            <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dar es salaam</p>
+                <h5 class="card-title">Nyumba inauzwa goba</h5>
+
+
+                <a class="btn btn-success" style="margin-right: 10px;">TZS 50 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm26">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="14000">00:00:00</div>
+
+                  <form id="bidForm26" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="tbt.jpg" height="" width="" class="card-img-top" alt="">
+            <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dar es salaam</p>
+                <h5 class="card-title">Nyumba inauzwa mbagala</h5>
+
+
+                <a class="btn btn-success" style="margin-right: 10px;">TZS 80 000 000</a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm27">Place Bid</button>
+                <br>
+                <div class="timer" data-duration="11000">00:00:00</div>
+
+
+                  <form id="bidForm27" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="mpg.jpeg" height="" width="" class="card-img-top" alt="">
+            <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dodoma</p>
+                <h5 class="card-title">Nyumba inauzwa mipango</h5>
+
+
+                <a class="btn btn-success" style="margin-right: 10px;">TZS 60 000 000</a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm28">Place Bid</button>
+                <br>
+                <div class="timer" data-duration="10000">00:00:00</div>
+
+                <form id="bidForm28" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+  <div class="footer">
+</div>
+</body>
+</html>

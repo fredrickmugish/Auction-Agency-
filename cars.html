@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <ul>
+            <li><a href="Home.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-users"></i>About</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-inr"></i>Auctions</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="house.html">Houses</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="land.html">Lands</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            
+            <li><a href="#"><i class="fa fa-phone"></i>Contact</a>
+            <div class="sub-menu-1">
+                 <ul>
+                    <li style="color:white">0762521584</li>
+                    <li style="color:white">0633349974</li>
+                </ul>
+            </div>
+            </li>
+            <li><a href="form.html"><i class="fa fa-user"></i>Log In</a></li>
+         
+
+        </ul>
+        <div class="search-menu">
+        <form action="#" method="post" name="search-bar">
+            <input class="srch" type="text" placeholder="Product/Location" name="search">
+            <input class="btn" type="submit" value="Search">
+        </form>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="har.jpeg" height="" width="" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dodoma</p>
+                  <h5 class="card-title">TOYOTA HARIER MPYA</h5>
+                
+                 
+                  <a class="btn btn-success" style="margin-right: 10px;">TZS 34 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm1">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="18000">00:00:00</div>
+
+                  <form id="bidForm1" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+
+              </div>
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="brevis.jpeg" height="" width="" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dar es salaam</p>
+                <h5 class="card-title">Brevis,2490cc gari kalii</h5>
+
+                 
+                <a class="btn btn-success" style="margin-right: 10px;">TZS 190 000 000</a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm2">Place Bid</button>
+                <br>
+                <div class="timer" data-duration="18000">00:00:00</div>
+
+                  <form id="bidForm2" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+              </div>
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="cwn.jpeg" height="220" width="400" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Dodoma</p>
+                <h5 class="card-title">Crown Athlete</h5>
+
+                    <a class="btn btn-success" style="margin-right: 10px;">TZS 20 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm3">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="17000">00:00:00</div>
+
+
+                  <form id="bidForm3" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+              </div>
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="spacio.jpeg" height="" width="" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text"><i class="fa fa-map-marker"></i> Mwanza</p>
+                <h5 class="card-title">Gari Toyota spacio</h5>
+
+                  <a class="btn btn-success" style="margin-right: 10px;">TZS 5 000 000</a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm4">Place Bid</button>
+                  <br>
+                  <div class="timer" data-duration="12000">00:00:00</div>
+
+
+                  <form id="bidForm4" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+
+<br><br>
+<div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="istt.jpeg" height="220" width="400" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text"><i class="fa fa-map-marker"></i> Dodoma</p>
+                <h5 class="card-title">Toyota Ist bei rahisi</h5>
+              
+               
+                <a class="btn btn-success" style="margin-right: 10px;">TZS 9 000 000</a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm5">Place Bid</button>
+                <br>
+                <div class="timer" data-duration="18000">00:00:00</div>
+
+                <form id="bidForm5" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="range1.jpg" height="220" width="400" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text"><i class="fa fa-map-marker"></i> Dar es salaam</p>
+              <h5 class="card-title">Range rover vogue2014</h5>
+
+               
+              <a class="btn btn-success" style="margin-right: 10px;">TZS 150 000 000</a>
+              <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm6">Place Bid</button>
+              <br>
+              <div class="timer" data-duration="18000">00:00:00</div>
+
+                <form id="bidForm6" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="kl.jpeg" height="" width="" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text"><i class="fa fa-map-marker"></i> Dodoma</p>
+              <h5 class="card-title">Toyota kluger bei rahisi</h5>
+
+                  <a class="btn btn-success" style="margin-right: 10px;">TZS 25 000 000</a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm7">Place Bid</button>
+                <br>
+                <div class="timer" data-duration="17000">00:00:00</div>
+
+
+                <form id="bidForm7" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="rm.jpeg" height="210" width="400" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text"><i class="fa fa-map-marker"></i> Mwanza</p>
+              <h5 class="card-title">Raum new,1490cc,gari kalii</h5>
+
+                <a class="btn btn-success" style="margin-right: 10px;">TZS 8 800 000</a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm8">Place Bid</button>
+                <br>
+                <div class="timer" data-duration="12000">00:00:00</div>
+
+
+                <form id="bidForm8" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+  <script src="script.js"></script>
+  
+  <div class="footer">
+</div>
+</body>
+</html>

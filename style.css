@@ -1,0 +1,44 @@
+body{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(34, 49, 64);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("wp.jpg");
+
+    }
+    
+    form{
+        background: rgb(240, 240, 240);
+        text-align: center;
+        border-radius: 15px;
+        width: 300px;
+    }
+    
+    form input{
+      padding: 8px;
+      text-align: center;
+      border: 2px solid #4090db;
+      outline: none;
+      font-size: 16px;
+      border-radius: 10px;
+      width: 200px;
+    }
+    
+    p{
+        color: red;
+    }
+    
+    form input[type = "submit"]{
+        cursor: pointer;
+        color: white;
+        background-color: #4090db;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    h5{
+        font-weight: 900;
+    }

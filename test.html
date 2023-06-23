@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="dropdown.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div>
+    <div class="image-container">
+        <div class="moving-image">
+          <img src="hos.png" alt="Moving Image 1">
+        </div>
+        <div class="moving-image">
+          <img src="mts.jpg" alt="Moving Image 2">
+        </div>
+        <div class="moving-image">
+          <img src="new.png" alt="Moving Image 3">
+        </div>
+        <div class="moving-image">
+          <img src="res.png" alt="Moving Image 4">
+        </div>
+        <div class="moving-image">
+          <img src="software.jpeg" alt="Moving Image 5">
+        </div>
+      </div>
+
+      <script>
+        const movingImages = document.querySelectorAll('.moving-image');
+    
+        for (let i = 0; i < movingImages.length; i++) {
+          movingImages[i].style.animationDelay = '0s';
+          movingImages[i].style.opacity = '1';
+        }
+      </script>
+    
+</body>
+</html>
