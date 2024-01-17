@@ -14,17 +14,12 @@
 </head>
 <body>
  
-    <form action="/" method="get">
+    <form action="login.php" method="post">
+        @csrf
         <h1>Login</h1>
-<input type="text"
-id="username"
-name="username"
-placeholder="username" />
+<input type="text" id="username" name="username" placeholder="username" />
 
-<input type="password"
-id="password"
-name="password"
-placeholder="password" />
+<input type="password" id="password" name="password" placeholder="password" />
 
 <p id="errorMessage" hidden></p>
 
