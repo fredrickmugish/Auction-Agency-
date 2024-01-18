@@ -10,9 +10,9 @@ $Username =$_POST['username'];
 $Password = $_POST['password'];
 $Email = $_POST['email'];
 
+$hashPassword = password_hash($Password, PASSWORD_DEFAULT);
 
-
-$sql = "INSERT INTO Users(Fname, Lname, Username, Password, Email) VALUES ('$Fname', '$Lname', '$Username', '$Password', '$Email')";
+$sql = "INSERT INTO Users(Fname, Lname, Username, Password, Email) VALUES ('$Fname', '$Lname', '$Username', '$hashPassword', '$Email')";
 
 
 if ($conn->query($sql) == TRUE){
