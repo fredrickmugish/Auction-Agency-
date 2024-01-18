@@ -22,7 +22,7 @@ if ($result->num_rows>0){
    //verify the entered password and the hashed password
    if (password_verify($enteredPassword, $hashPassword)){
     echo "Login successfully";
-    header("LOcation: house.html");
+    header("Location: loghome.html");
     exit();
    }
 

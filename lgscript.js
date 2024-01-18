@@ -1,24 +1,15 @@
-//$(document).ready(function(){
-    //$(".bidButton").click(function(){
-     //   var formId = $(this).data("form");
-      //  $("#" + formId).toggle();
-   // });
+$(document).ready(function(){
+    $(".bidButton").click(function(){
+        var formId = $(this).data("form");
+        $("#" + formId).toggle();
+    });
 
-   // $(".bidForm").submit(function(e){
-    //    e.preventDefault();
-     //   $(this).trigger("reset");
-      //  $(this).hide();
-    //})
-//});
-
-//  $(document).ready(function () {
-    //    $(".bidBtn").click(function () {
-            // Redirect to the login.html page when bid button is clicked
-      //      window.location.href = 'login.html';
-      //  });
-    //});
-
-
+    $(".bidForm").submit(function(e){
+        e.preventDefault();
+        $(this).trigger("reset");
+        $(this).hide();
+    })
+});
 
 // Update each timer display
 function updateTimers() {

@@ -17,38 +17,21 @@
 
     <div class="menu-bar">
         <ul>
-            <li><a href="home.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="loghome.html"><i class="fa fa-home"></i>Home</a></li>
            
             <li><a href="#"><i class="fa fa-inr"></i>Auctions</a>
                 <div class="sub-menu-1">
                     <ul>
-                        <li><a href="house.html">Houses</a></li>
-                        <li><a href="cars.html">Cars</a></li>
-                        <li><a href="land.html">Lands</a></li>
+                        <li><a href="loghouse.html">Houses</a></li>
+                        <li><a href="logcars.html">Cars</a></li>
+                        <li><a href="logland.html">Lands</a></li>
                     </ul>
                 </div>
             </li>
 
-            <li><a href="#"><i class="fa fa-users"></i>About</a>
-                <div class="sub-menu-1">
-                    <ul>
-                        <li><a href="mission.html">Mission</a></li>
-                        <li><a href="vision.html">Vision</a></li>
-                        <li><a href="team.html">Team</a></li>
-                    </ul>
-                </div>
-            </li>
-            
-            <li><a href="#"><i class="fa fa-phone"></i>Contact</a>
-            <div class="sub-menu-1">
-                 <ul>
-                    <li style="color:white">0762521584</li>
-                    <li style="color:white">0633349974</li>
-                </ul>
-            </div>
-            </li>
-            <li><a href="login.html"><i class="fa fa-user"></i>Log In</a></li>
-           
+            <li><a href="logout.php"><i class="fa fa-user"></i>Log Out</a></li>
+         
+
         </ul>
         <div class="search-menu">
         <form action="#" method="post" name="search-bar">
@@ -69,14 +52,20 @@
 
 
                   <a class="btn btn-success" style="margin-right: 10px;">TZS 800 000 000</a>
-               <a href="login.html" >  <button class="btn btn-primary bidBtn" style="margin-right: 0px;" >Place Bid</button> </a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm21">Place Bid</button>
                   <br>
                   <div class="timer" data-duration="13000">00:00:00</div>
+
+                  <form id="bidForm21" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
               </div>
           </div>
       </div>
   
-
       <div class="col">
           <div class="card" style="width: 18rem;">
               <img src="images/gomz2.jpg" height="" width="" class="card-img-top" alt="">
@@ -86,9 +75,17 @@
 
 
                   <a class="btn btn-success" style="margin-right: 10px;">TZS 100 000 000</a>
-            <a href="login.html"><button href="" class="btn btn-primary bidBtn" style="margin-right: 0px;" data-form="bidForm22">Place Bid</button> </a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm22">Place Bid</button>
                   <br>
                   <div class="timer" data-duration="10000">00:00:00</div>
+
+
+                  <form id="bidForm22" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
               </div>
           </div>
       </div>
@@ -102,10 +99,16 @@
 
 
                   <a class="btn btn-success" style="margin-right: 10px;">TZS 400 000 000</a>
-               <a  href="login.html" >  <button class="btn btn-primary" style="margin-right: 0px;">Place Bid</button></a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 0px;" data-form="bidForm23">Place Bid</button>
                   <br>
                   <div class="timer" data-duration="9000">00:00:00</div>
 
+                  <form id="bidForm23" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
               </div>
           </div>
       </div>
@@ -119,9 +122,16 @@
 
 
                   <a class="btn btn-success" style="margin-right: 10px;">TZS 50 000 000</a>
-                <a href="login.html">  <button  class="btn btn-primary bidBtn" style="margin-right: 10px;" data-form="bidForm24">Place Bid</button> </a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm24">Place Bid</button>
                   <br>
                   <div class="timer" data-duration="5000">00:00:00</div>
+
+                  <form id="bidForm24" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
               </div>
           </div>
       </div>
@@ -139,9 +149,17 @@
 
 
                 <a class="btn btn-success" style="margin-right: 10px;">TZS 40 000 000</a>
-              <a href="login.html">  <button  class="btn btn-primary bidBtn" style="margin-right: 10px;" data-form="bidForm25">Place Bid</button> </a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm25">Place Bid</button>
                   <br>
                   <div class="timer" data-duration="2000">00:00:00</div>
+
+
+                <form id="bidForm25" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
             </div>
         </div>
     </div>
@@ -155,10 +173,16 @@
 
 
                 <a class="btn btn-success" style="margin-right: 10px;">TZS 50 000 000</a>
-               <a href="login.html">  <button href="" class="btn btn-primary bidBtn" style="margin-right: 10px;" data-form="bidForm26">Place Bid</button> </a>
+                  <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm26">Place Bid</button>
                   <br>
                   <div class="timer" data-duration="14000">00:00:00</div>
 
+                  <form id="bidForm26" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
             </div>
         </div>
     </div>
@@ -172,9 +196,17 @@
 
 
                 <a class="btn btn-success" style="margin-right: 10px;">TZS 80 000 000</a>
-             <a href="login.html">   <button href="" class="btn btn-primary bidBtn" style="margin-right: 10px;" >Place Bid</button></a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm27">Place Bid</button>
                 <br>
                 <div class="timer" data-duration="11000">00:00:00</div>
+
+
+                  <form id="bidForm27" class="bidForm" style="display: none;">
+                   <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                   <b>Email: </b><input type="text" name="email">
+                   <b>Amount: </b><input type="text" name="bid">
+               <input type="submit"  value="Submit"></input>
+                  </form>
             </div>
         </div>
     </div>
@@ -188,15 +220,22 @@
 
 
                 <a class="btn btn-success" style="margin-right: 10px;">TZS 60 000 000</a>
-              <a href="login.html"> <button href="" class="btn btn-primary bidBtn" style="margin-right: 10px;" data-form="bidForm28">Place Bid</button> </a>
+                <button href="" class="btn btn-primary bidButton" style="margin-right: 10px;" data-form="bidForm28">Place Bid</button>
                 <br>
                 <div class="timer" data-duration="10000">00:00:00</div>
+
+                <form id="bidForm28" class="bidForm" style="display: none;">
+                 <br><br> <b>Full Names:</b> <input type="text" name="fullNames">
+                 <b>Email: </b><input type="text" name="email">
+                 <b>Amount: </b><input type="text" name="bid">
+             <input type="submit"  value="Submit"></input>
+                </form>
             </div>
         </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="lgscript.js"></script>
   
   <div class="footer">
 </div>
