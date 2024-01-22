@@ -32,7 +32,7 @@ if ($result->num_rows>0){
     }
 
     elseif($usertype == 1){
-        header("Location: admin/panel.html");
+        header("Location: panel.html");
     }
 
     exit();

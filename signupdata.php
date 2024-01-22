@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bid</title>
+    <title>Document</title>
 
     <style>
 
@@ -46,14 +46,10 @@ table {
 </head>
 <body>
 <?php
-require "../config.php";
+require "config.php";
 
-//sqlquery to retrieve data from the Bid table by joining with the Users table using the UserId 
-$sql = "SELECT Amount, Users.Fname, Users.Lname
-FROM Bid
-INNER JOIN Users ON Bid.UserID = Users.UserID;
-        
-";
+//sqlquery to retrieve data from the table
+$sql = "SELECT *FROM Users";
 
 //Execute the query
 $result = $conn->query($sql);
@@ -63,7 +59,8 @@ echo "<table>
 <tr>
 <th>First name</th>
 <th>Last name</th>
-<th>Amount</th>
+<th>username</th>
+<th>Email</th>
 <th>Action</th>
 <th>Action</th>
 </tr>";
@@ -75,7 +72,8 @@ while($row = $result->fetch_assoc()){
     echo "<tr>";
     echo "<td>" .$row["Fname"]."</td>";
     echo "<td>" .$row["Lname"]."</td>";
-    echo "<td>" .$row["Amount"]."</td>";
+    echo "<td>" .$row["Username"]."</td>";
+    echo "<td>" .$row["Email"]."</td>";
     echo "<td><a href='update.php?id=" .$row["id"]."' class='btn btn-primary'>Update</a></td>";
     echo "<td><a href='deletelogin.php?id=" .$row["id"]."' class='btn btn-danger'>Delete</a></td>";
     echo "</tr>";

@@ -65,8 +65,9 @@ table {
 <input type="text" name="description" required><br>
 
 <lable> Image: </lable>
-        <input type="file" name="image" accept="image/*"/><br>
-        <input type="submit" value="Add item" class="btn btn-success"></input>
+<input type="file" name="image"/><br>
+
+<input type="submit" value="Add item" class="btn btn-success"></input>
 </form>
 <br>
 
@@ -83,7 +84,7 @@ if (!isset($_SESSION['UserID'])) {
     header("Location: login.html");
     exit();
 }
-include "../config.php"; 
+include "config.php"; 
 
 // Retrieve data from the "items" table
 $sql = "SELECT Category, Location, Price, Description, image_path FROM Items";
@@ -110,12 +111,13 @@ if ($result->num_rows > 0) {
 
       
         echo "<tr>";
-        echo "<td>{$row['Category']}</td>";
-        echo "<td>{$row['Location']}</td>";
-        echo "<td>{$row['Price']}</td>";
-        echo "<td>{$row['Description']}</td>";
-        echo "<td><img src='admin/uploads/{$image_path}'  class='item-image' ></td>"; 
+        echo "<td>$Category</td>";
+        echo "<td>$Location</td>";
+        echo "<td>$Price</td>";
+        echo "<td>$Description</td>";
+        echo "<td><img src='$image_path' class='item-image'></td>"; 
         echo "</tr>";
+        
     }
 } else {
     echo "No items found.";
