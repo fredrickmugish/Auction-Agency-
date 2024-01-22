@@ -38,8 +38,8 @@ table {
         }
 
         .item-image {
-            width: 150px; 
-            height: 150px; 
+            width: 100px; 
+            height: 100px; 
         }
 
     </style>
@@ -48,26 +48,39 @@ table {
 
 <form action="process_item.php" method="POST" enctype="multipart/form-data">
 
-<label>Item category:</label>
+<div style="margin-bottom: 10px;">
+<label style="display: inline-block; width: 150px;">Item category:</label>
 <select name="category" required>
      <option value="House">House</option>
      <option value=" Car">Car</option>
      <option value="Land">Land</option>
         </select>
-<br>
-       <lable> Location: </lable>
- <input type="text" name="location" required><br>
+</div>
+
+
+<div style="margin-bottom: 10px;">
+       <lable style="display: inline-block; width: 150px;"> Location: </lable>
+ <input type="text" name="location" required>
+</div>
         
-      <lable> Price: </lable>
-<input type="text" name="price" required><br>
+<div style="margin-bottom: 10px;">
+      <lable style="display: inline-block; width: 150px;"> Price: </lable>
+<input type="text" name="price" required>
+</div>
 
-<lable> Description: </lable>
-<input type="text" name="description" required><br>
+<div style="margin-bottom: 10px;">
+<lable style="display: inline-block; width: 150px;"> Description: </lable>
+<input type="text" name="description" required>
+</div>
 
-<lable> Image: </lable>
-<input type="file" name="image"/><br>
+<div style="margin-bottom: 10px;">
+<lable style="display: inline-block; width: 150px;"> Image: </lable>
+<input type="file" name="image"/>
+</div>
 
+<div style="margin-bottom: 10px;">
 <input type="submit" value="Add item" class="btn btn-success"></input>
+</div>
 </form>
 <br>
 
