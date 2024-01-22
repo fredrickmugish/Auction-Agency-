@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        #header {
+            background: rgb(0, 100,0);
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+
+        #sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+            top: 50px; 
+        }
+
+        #sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        #content {
+            margin-left: 260px;
+            padding: 20px;
+            padding-top: 80px; 
+        }
+
+        #logo {
+            max-width: 100px;
+            margin-right: 130px;
+        }
+
+        .btn-secondary {
+            margin-left: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <img id="logo" src="images/LOG.png" alt="Logo">
+        <h1>G6 AUCTION AGENCY</h1>
+        <a href="logout.php" class="btn btn-secondary">Logout</a>
+    </div>
+
+    <br>
+    <div id="sidebar">
+        <br><br>
+        <h2>Admin Panel</h2>
+        
+        <a href="signupdata.php">CUSTOMERS</a>
+        <a href="itemsdata.php">ITEMS</a>
+        <a href="biddata.php">BID PLACED</a>
+    </div>
+    
+    
+    <div id="content">
+        <h1>Welcome to the Admin Panel</h1>
+        <p>Select an option from the sidebar to get started.</p>
+    </div>
+    
+
+    <script>
+        // JavaScript to load content when a sidebar link is clicked
+        const sidebarLinks = document.querySelectorAll('#sidebar a');
+        const contentDiv = document.getElementById('content');
+
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const linkHref = e.target.getAttribute('href');
+                // Load content from the specified URL
+                fetch(linkHref)
+                    .then(response => response.text())
+                    .then(data => {
+                        contentDiv.innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error('Error loading content:', error);
+                    });
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

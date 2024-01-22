@@ -26,7 +26,7 @@ else
 }
 
 
-header("Location: register.html");
+header("Location: login.html");
 exit();
 }
 
