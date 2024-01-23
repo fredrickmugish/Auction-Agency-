@@ -22,7 +22,7 @@ $sql = "INSERT INTO Bid(UserID, Amount) VALUES ('$UserID','$Amount')";
 if($conn->query($sql) == TRUE){
 
     echo "Data inserted successfuly";
-    header("Location: loghouse.html");
+    header("Location: loghouse.php");
     exit();
 }
 

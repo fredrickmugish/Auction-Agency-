@@ -47,7 +47,7 @@ table {
 <body>
 
 <form action="process_item.php" method="POST" enctype="multipart/form-data">
-
+<br>
 <div style="margin-bottom: 10px;">
 <label style="display: inline-block; width: 150px;">Item category:</label>
 <select name="category" required>
@@ -56,8 +56,6 @@ table {
      <option value="Land">Land</option>
         </select>
 </div>
-
-
 <div style="margin-bottom: 10px;">
        <lable style="display: inline-block; width: 150px;"> Location: </lable>
  <input type="text" name="location" required>
@@ -85,7 +83,7 @@ table {
 <br>
 
 <!----show all items--->
-<h1>All items</h1>
+<h1>ALL ITEMS</h1>
 
 
 <?php
