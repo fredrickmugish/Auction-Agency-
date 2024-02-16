@@ -49,10 +49,10 @@ table {
 require "config.php";
 
 //sqlquery to retrieve data from the Bid table by joining with the Users table using the UserId 
-$sql = "SELECT Amount, Users.Fname, Users.Lname, Items.Category, Items.Location, Items.image_path
+$sql = "SELECT Bid.Amount, Users.Fname, Users.Lname
 FROM Bid
-INNER JOIN Users ON Bid.UserID = Users.UserID,
-INNER JOIN Items ON Bid.ItemID = Items.ItemID;
+INNER JOIN Users ON Bid.UserID = Users.UserID
+
         
 ";
 
@@ -65,9 +65,7 @@ echo "<table>
 <th>First name</th>
 <th>Last name</th>
 <th>Amount</th>
-<th>Product</th>
-<th>Location</th>
-<th>Image</th>
+
 <th>Action</th>
 <th>Action</th>
 </tr>";
@@ -80,11 +78,9 @@ while($row = $result->fetch_assoc()){
     echo "<td>" .$row["Fname"]."</td>";
     echo "<td>" .$row["Lname"]."</td>";
     echo "<td>" .$row["Amount"]."</td>";
-    echo "<td>" .$row["Category"]."</td>";
-    echo "<td>" .$row["Location"]."</td>";
-    echo "<td><img src='$image_path' class='item-image'></td>"; 
+ 
     echo "<td><a href='update.php?id=" .$row["id"]."' class='btn btn-primary'>Update</a></td>";
-    echo "<td><a href='deletelogin.php?id=" .$row["id"]."' class='btn btn-danger'>Delete</a></td>";
+    echo "<td><a href='deleteitem.php?id=" .$row["id"]."' class='btn btn-danger'>Delete</a></td>";
     echo "</tr>";
 }
 }
